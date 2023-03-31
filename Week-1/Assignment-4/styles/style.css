@@ -1,31 +1,141 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 .logo {
-  height: 2rem;
-  width: 15rem;
+  display: flex;
+  flex: 0 0 auto;
+  height: 36px;
+  margin-top: 6px;
+  -webkit-box-align: center;
+  align-items: center;
 }
 header {
+  background-color: #fff;
+  height: 48px;
+  padding: 0 16px 0 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  z-index: 2;
+}
+.header-wrapper {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  min-height: 100%;
+  gap: 16px;
 }
-
 header nav {
   flex: 2 1 400px;
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.search {
+  flex: 0 0 auto;
+  border-radius: 4px;
+  display: inline-block;
+  height: 36px;
+  width: 200px;
 }
 header a {
   color: dimgray;
 }
 header a:visited {
   color: dimgray;
+}
+button {
+  display: flex;
+  appearance: none;
+  text-align: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-shadow: none;
+  color: #3c4043;
+  cursor: pointer;
+  height: 36px;
+  min-width: 154px;
+}
+.translated {
+  width: 100%;
+  height: 48px;
+}
+.tran-message {
+  display: flex;
+}
+.tran-text {
+  margin: auto auto auto 30px;
+}
+.tran-text-span {
+  margin-left: 16px;
+}
+.tran-button {
+  align-items: center;
+  color: #1a73e8;
+  margin: auto;
+  margin-right: 16px;
+}
+
+.fullscreen-img {
+  background-image: url(../io-promo-2023-badge.svg), url(../io-promo-2023.png);
+  background-repeat: no-repeat;
+  background-size: 300px auto, auto 100vh;
+  background-position: top 38px left 38px, top right;
+  background-color: #202124;
+  width: 100vw;
+  position: absolute;
+  z-index: 1;
+}
+.fullscreen-img {
+  height: calc(100vh - 48px);
+}
+
+.fullscreen-item {
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  color: #3c4043;
+  padding: 24px;
+  z-index: 1;
+  width: 500px;
+  height: 528px;
+  margin-top: 24vh;
+  margin-left: 24px;
+}
+.fullscreen-item h2 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 64px;
+  margin: 48px 0 24px;
+  color: #202124;
+  margin-block: unset;
+}
+
+.fullscreen-item p {
+  margin-block: 24px;
+  margin: 16px 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.item-button {
+  align-items: center;
+  margin-top: 48px;
+  background-color: #f9ab00;
+  border: 1px solid #202124;
+  color: #202124;
 }
