@@ -18,7 +18,7 @@
   align-items: center;
 }
 header {
-  background-color: #fff;
+  background-color: rgb(248, 249, 250);
   height: 48px;
   padding: 0 16px 0 24px;
   position: fixed;
@@ -37,26 +37,21 @@ header {
 header nav {
   flex: 2 1 400px;
 }
-
-header nav ul {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.search {
-  flex: 0 0 auto;
-  border-radius: 4px;
-  display: inline-block;
-  height: 36px;
-  width: 200px;
-}
 header a {
   color: dimgray;
 }
 header a:visited {
   color: dimgray;
 }
-button {
+footer {
+  background-color: #fff;
+  height: 32px;
+  padding: 0 24px 0 24px;
+  width: 100%;
+}
+/* .change-language, */
+.tran-button,
+.item-button {
   display: flex;
   appearance: none;
   text-align: center;
@@ -69,6 +64,13 @@ button {
   cursor: pointer;
   height: 36px;
   min-width: 154px;
+}
+#selecter {
+  color: #3c4043;
+  width: 154px;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  box-shadow: none;
 }
 .translated {
   width: 100%;
@@ -97,27 +99,33 @@ button {
   background-position: top 38px left 38px, top right;
   background-color: #202124;
   width: 100vw;
-  position: absolute;
   z-index: 1;
 }
-.fullscreen-img {
+.fullscreen-img,
+.row-html {
   height: calc(100vh - 48px);
+}
+
+.row-html {
+  display: flex;
+  align-items: end;
 }
 
 .fullscreen-item {
   background-color: #fff;
   border: 1px solid #dadce0;
+  align-items: center;
   border-radius: 4px;
   color: #3c4043;
   padding: 24px;
   z-index: 1;
-  width: 500px;
-  height: 528px;
-  margin-top: 24vh;
-  margin-left: 24px;
+  max-width: 500px;
+  max-height: 400px;
+  margin: 0 0 24px 24px;
 }
+
 .fullscreen-item h2 {
-  font-size: 64px;
+  font-size: 60px;
   font-weight: 500;
   line-height: 64px;
   margin: 48px 0 24px;
@@ -129,7 +137,7 @@ button {
   margin-block: 24px;
   margin: 16px 0;
   padding: 0;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .item-button {
@@ -138,4 +146,58 @@ button {
   background-color: #f9ab00;
   border: 1px solid #202124;
   color: #202124;
+}
+.interest-container {
+  background-color: #f1f3f4;
+}
+.interest-search {
+  height: 48px;
+}
+.interest-search.btn {
+  background-color: #fff;
+}
+.interest-search button {
+  margin-left: 8px;
+}
+
+.img-container img {
+  width: 5rem;
+}
+.logos-col {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-container {
+  width: 100%;
+}
+.logo-container {
+  width: 100%;
+}
+.products-link {
+  min-height: 188px;
+}
+
+.sticky {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+}
+.card {
+  max-width: 25vw;
+  min-width: 20rem;
+  height: 240px;
+  margin: 0;
+}
+.interest-search-cards {
+  display: flex;
+  gap: 24px;
+}
+.card-title {
+  color: #1a73e8;
+  cursor: pointer;
+}
+.footer-item {
+  margin-left: 40px;
 }

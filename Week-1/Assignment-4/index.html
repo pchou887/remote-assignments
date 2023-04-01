@@ -3,6 +3,12 @@
 <html>
   <head>
     <title>Google Developer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
@@ -18,47 +24,71 @@
             />
           </a>
         </div>
-        <nav class="tabs">
-          <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Learn</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Developer Profile</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          style="top: 0; height: 24px"
+        >
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Learn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Developer Profile</a>
+                </li>
+                <li class="nav-item m">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-auto"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <div class="div-search">
-          <form>
-            <label for="search">
-              <input
-                class="search"
-                type="text"
-                name="search-value"
-                placeholder="搜尋"
-              />
-            </label>
-          </form>
+        <div class="change-language-div">
+          <button class="change-language btn btn-light" style="height: 32px">
+            <svg
+              class="icon-language"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22q-2.05 0-3.875-.788-1.825-.787-3.187-2.15-1.363-1.362-2.15-3.187Q2 14.05 2 12q0-2.075.788-3.887.787-1.813 2.15-3.175Q6.3 3.575 8.125 2.787 9.95 2 12 2q2.075 0 3.887.787 1.813.788 3.175 2.151 1.363 1.362 2.15 3.175Q22 9.925 22 12q0 2.05-.788 3.875-.787 1.825-2.15 3.187-1.362 1.363-3.175 2.15Q14.075 22 12 22Zm0-2.05q.65-.9 1.125-1.875T13.9 16h-3.8q.3 1.1.775 2.075.475.975 1.125 1.875Zm-2.6-.4q-.45-.825-.787-1.713Q8.275 16.95 8.05 16H5.1q.725 1.25 1.812 2.175Q8 19.1 9.4 19.55Zm5.2 0q1.4-.45 2.487-1.375Q18.175 17.25 18.9 16h-2.95q-.225.95-.562 1.837-.338.888-.788 1.713ZM4.25 14h3.4q-.075-.5-.113-.988Q7.5 12.525 7.5 12t.037-1.012q.038-.488.113-.988h-3.4q-.125.5-.188.988Q4 11.475 4 12t.062 1.012q.063.488.188.988Zm5.4 0h4.7q.075-.5.113-.988.037-.487.037-1.012t-.037-1.012q-.038-.488-.113-.988h-4.7q-.075.5-.112.988Q9.5 11.475 9.5 12t.038 1.012q.037.488.112.988Zm6.7 0h3.4q.125-.5.188-.988Q20 12.525 20 12t-.062-1.012q-.063-.488-.188-.988h-3.4q.075.5.112.988.038.487.038 1.012t-.038 1.012q-.037.488-.112.988Zm-.4-6h2.95q-.725-1.25-1.813-2.175Q16 4.9 14.6 4.45q.45.825.788 1.712.337.888.562 1.838ZM10.1 8h3.8q-.3-1.1-.775-2.075Q12.65 4.95 12 4.05q-.65.9-1.125 1.875T10.1 8Zm-5 0h2.95q.225-.95.563-1.838.337-.887.787-1.712Q8 4.9 6.912 5.825 5.825 6.75 5.1 8Z"
+              ></path>
+            </svg>
+            中文 - 繁體
+            <svg
+              class="icon-arrow"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="m12 15-5-5h10Z"></path>
+            </svg>
+          </button>
         </div>
-        <button class="change-language">
-          <svg
-            class="icon-language"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 22q-2.05 0-3.875-.788-1.825-.787-3.187-2.15-1.363-1.362-2.15-3.187Q2 14.05 2 12q0-2.075.788-3.887.787-1.813 2.15-3.175Q6.3 3.575 8.125 2.787 9.95 2 12 2q2.075 0 3.887.787 1.813.788 3.175 2.151 1.363 1.362 2.15 3.175Q22 9.925 22 12q0 2.05-.788 3.875-.787 1.825-2.15 3.187-1.362 1.363-3.175 2.15Q14.075 22 12 22Zm0-2.05q.65-.9 1.125-1.875T13.9 16h-3.8q.3 1.1.775 2.075.475.975 1.125 1.875Zm-2.6-.4q-.45-.825-.787-1.713Q8.275 16.95 8.05 16H5.1q.725 1.25 1.812 2.175Q8 19.1 9.4 19.55Zm5.2 0q1.4-.45 2.487-1.375Q18.175 17.25 18.9 16h-2.95q-.225.95-.562 1.837-.338.888-.788 1.713ZM4.25 14h3.4q-.075-.5-.113-.988Q7.5 12.525 7.5 12t.037-1.012q.038-.488.113-.988h-3.4q-.125.5-.188.988Q4 11.475 4 12t.062 1.012q.063.488.188.988Zm5.4 0h4.7q.075-.5.113-.988.037-.487.037-1.012t-.037-1.012q-.038-.488-.113-.988h-4.7q-.075.5-.112.988Q9.5 11.475 9.5 12t.038 1.012q.037.488.112.988Zm6.7 0h3.4q.125-.5.188-.988Q20 12.525 20 12t-.062-1.012q-.063-.488-.188-.988h-3.4q.075.5.112.988.038.487.038 1.012t-.038 1.012q-.037.488-.112.988Zm-.4-6h2.95q-.725-1.25-1.813-2.175Q16 4.9 14.6 4.45q.45.825.788 1.712.337.888.562 1.838ZM10.1 8h3.8q-.3-1.1-.775-2.075Q12.65 4.95 12 4.05q-.65.9-1.125 1.875T10.1 8Zm-5 0h2.95q.225-.95.563-1.838.337-.887.787-1.712Q8 4.9 6.912 5.825 5.825 6.75 5.1 8Z"
-            ></path>
-          </svg>
-          <span>中文 - 繁體</span>
-          <svg
-            class="icon-arrow"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="m12 15-5-5h10Z"></path>
-          </svg>
-        </button>
       </div>
     </header>
     <main class="main-content">
@@ -84,28 +114,376 @@
         </div>
         <div class="main-body">
           <section class="fullscreen-img row">
-            <div class="row-inner">
-              <div class="row-html">
-                <div class="fullscreen-item">
-                  <h2 id="google-io-title">
-                    開始吧<br />是 Google I/O 大會<br />2023 年 5 月 10 日
-                  </h2>
-                  <p>
-                    請密切關注線上活動，瞭解最新的解決方案、產品和技術如何協助您更聰明地工作並簡化開發工作流程。
-                  </p>
-                  <button class="item-button">立即報名</button>
+            <div class="row-html">
+              <div class="fullscreen-item">
+                <h2 id="google-io-title">
+                  開始吧<br />是 Google I/O 大會<br />2023 年 5 月 10 日
+                </h2>
+                <p>
+                  請密切關注線上活動，瞭解最新的解決方案、產品和技術如何協助您更聰明地工作並簡化開發工作流程。
+                </p>
+                <button class="item-button">立即報名</button>
+              </div>
+            </div>
+          </section>
+          <section class="interest-category sticky">
+            <div class="interest-container pt-5 pb-3 flex">
+              <div class="interest-title mx-4 mb-5">
+                <h3>選取要篩選的興趣類別</h3>
+              </div>
+              <div class="interest-search overflow-hidden mx-4 mb-3">
+                <button type="button" class="btn btn-light">付款</button>
+                <button type="button" class="btn btn-light">行動</button>
+                <button type="button" class="btn btn-light">位置/地圖</button>
+                <button type="button" class="btn btn-light">物聯網(loT)</button>
+                <button type="button" class="btn btn-light">設計</button>
+                <button type="button" class="btn btn-light">
+                  智慧型住宅生態系統
+                </button>
+                <button type="button" class="btn btn-light">開放原始碼</button>
+                <button type="button" class="btn btn-light">搜尋</button>
+                <button type="button" class="btn btn-light">網路</button>
+                <button type="button" class="btn btn-light">廣告</button>
+                <button type="button" class="btn btn-light">
+                  AI 與機器學習
+                </button>
+                <button type="button" class="btn btn-light">Android</button>
+                <button type="button" class="btn btn-light">AR/VR</button>
+                <button type="button" class="btn btn-light">C#</button>
+                <button type="button" class="btn btn-light">ChromeOS</button>
+              </div>
+              <div class="interest-search-cards mx-4 grid pb-5">
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-subtitle pb-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-layout-text-window-reverse px-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                        />
+                        <path
+                          d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"
+                        /></svg
+                      >PRODUCT
+                    </p>
+                    <h3 class="card-title pb-3">Places Library</h3>
+                    <p class="card-text pb-2">
+                      透過 Maps JavaScript API Places Library
+                      中的函式，應用程式可以搜尋內含於指定區域
+                      (例如地圖邊界或定...
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-code"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-subtitle pb-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-text-fill px-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"
+                        /></svg
+                      >MARKETING
+                    </p>
+                    <h3 class="card-title pb-3">Cloud Translation</h3>
+                    <p class="card-text pb-2">
+                      Cloud Translation
+                      可讓您根據內容需求，使用預先訓練或自訂的機器學習模型，在不同語言之間進行動態互譯。
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-cloud"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-subtitle pb-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-file-earmark-text-fill px-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"
+                        /></svg
+                      >ARTICLE
+                    </p>
+                    <h3 class="card-title pb-3">Google Pay API</h3>
+                    <p class="card-text pb-2">為使用者提供更優質的結帳體驗。</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-code"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <p class="card-subtitle pb-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-layout-text-window-reverse px-1"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                        />
+                        <path
+                          d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"
+                        /></svg
+                      >PRODUCT
+                    </p>
+                    <h3 class="card-title pb-3">地理編碼服務</h3>
+                    <p class="card-text pb-2">
+                      地理編碼 是指將地址 (例如 1600 Amphitheatre Parkway,
+                      Mountain View, CA) 轉換成地理座標
+                    </p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      fill="currentColor"
+                      class="bi bi-code"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
-          <div
-            class="banner-side"
-            style="width: 100%; height: calc(100vh - 550px)"
-          ></div>
+          <section class="google-logos">
+            <div class="logos-header d-flex justify-content-center pt-4 pb-4">
+              <h2 class="display-3">
+                透過 Google 打造<strong>任何服務</strong>
+              </h2>
+            </div>
+            <div class="container d-flex justify-content-center logo-container">
+              <div
+                class="row row-cols-3 row-cols-md-5 d-flex justify-content-between align-items-center"
+              >
+                <div class="col p-3">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://developer.android.com/images/brand/Android_Robot.png?hl=zh-tw"
+                      alt="Andriod"
+                    />
+                  </div>
+                  <div class="desc text-center">Andriod</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="//www.gstatic.com/images/branding/product/2x/google_cloud_64dp.png"
+                      alt="Google Cloud"
+                    />
+                  </div>
+                  <div class="desc text-center">Google Cloud</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/firebase_64dp.png"
+                      alt="Firebase"
+                    />
+                  </div>
+                  <div class="desc text-center">Firebase</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/flutter_64dp.png"
+                      alt="Flutter"
+                    />
+                  </div>
+                  <div class="desc text-center">Flutter</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/assistant_64dp.png"
+                      alt="Google Assistant"
+                    />
+                  </div>
+                  <div class="desc text-center">Google Assistant</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/maps_64dp.png"
+                      alt="地圖平台"
+                    />
+                  </div>
+                  <div class="desc text-center">地圖平台</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://developers.google.com/static/site-assets/images/products/tensorflow-logo-196.png?hl=zh-tw"
+                      alt="TensorFlow"
+                    />
+                  </div>
+                  <div class="desc text-center">TensorFlow</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://developers.google.com/static/web/images/web-fundamentals-icon192x192.png?hl=zh-tw"
+                      alt="Web"
+                    />
+                  </div>
+                  <div class="desc text-center">Web</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://developers.google.com/static/ar/images/logo.svg?hl=zh-tw"
+                      alt="ARCore"
+                    />
+                  </div>
+                  <div class="desc text-center">ARCore</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://developers.google.com/static/homepage-assets/images/chromeos-logo.svg?hl=zh-tw"
+                      alt="Chrome OS"
+                    />
+                  </div>
+                  <div class="desc text-center">Chrome OS</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/play_prism_64dp.png"
+                      alt="Google Play"
+                    />
+                  </div>
+                  <div class="desc text-center">Google Play</div>
+                </div>
+                <div class="col">
+                  <div class="img-container logos-col">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/youtube_64dp.png"
+                      alt="YouTube"
+                    />
+                  </div>
+                  <div class="desc text-center">YouTube</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            class="d-flex justify-content-center align-items-center products-link"
+          >
+            <div class="products-btn">
+              <button class="btn btn-primary" type="button">
+                查看所有開發人員產品
+              </button>
+            </div>
+          </section>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light py-4"
+          style="height: 32px; background-color: rgb(255, 255, 255)"
+        >
+          <div
+            class="container-fluid"
+            style="background-color: rgb(255, 255, 255)"
+          >
+            <div class="home footer-item">
+              <a href="#">
+                <img
+                  src="https://www.gstatic.com/devrel-devsite/prod/ve286fa3f99aa90bc7ef7460968844e5bb93251ce750a58802f281151c87037d6/developers/images/lockup.svg"
+                  alt="Google Developer logo"
+                  class="logo"
+                />
+              </a>
+            </div>
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+              style="background-color: rgb(255, 255, 255)"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3 px-5">
+                <li class="nav-item footer-item">
+                  <a class="nav-link" href="#">Android</a>
+                </li>
+                <li class="nav-item footer-item">
+                  <a class="nav-link" href="#">Chrome</a>
+                </li>
+                <li class="nav-item footer-item">
+                  <a class="nav-link" href="#">Firebase</a>
+                </li>
+                <li class="nav-item footer-item">
+                  <a class="nav-link" href="#">Google Cloud Platform</a>
+                </li>
+                <li class="nav-item footer-item">
+                  <a class="nav-link" href="#">所有產品</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
