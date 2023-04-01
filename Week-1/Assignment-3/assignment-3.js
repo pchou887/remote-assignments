@@ -1,12 +1,12 @@
 function countAandB(input) {
-  count = 0;
+  let count = 0;
   for (let i = 0; i < input.length; i++) {
     if (input[i] === "a" || input[i] === "b") count++;
   }
   return count;
 }
 function toNumber(input) {
-  output = [];
+  let output = [];
   for (let i = 0; i < input.length; i++) {
     output.push(input[i].charCodeAt() - 96);
   }
