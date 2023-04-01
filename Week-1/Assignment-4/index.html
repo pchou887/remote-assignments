@@ -70,7 +70,10 @@
           </div>
         </nav>
         <div class="change-language-div">
-          <button class="change-language btn btn-light" style="height: 32px">
+          <button
+            class="change-language btn btn-light"
+            style="height: 32px; min-width: 152px"
+          >
             <svg
               class="icon-language"
               width="20"
@@ -101,18 +104,20 @@
         <div class="translated">
           <div class="tran-message">
             <div class="tran-text">
-              <img
-                src="https://developers.google.com/_static/images/translated.svg?hl=zh-tw"
-                class="tran-img"
-                alt
-              />
-              <span class="tran-text-span">
+              <div class="tran-text-img">
+                <img
+                  src="https://developers.google.com/_static/images/translated.svg?hl=zh-tw"
+                  class="tran-img"
+                  alt
+                />
+              </div>
+              <div class="tran-text-span">
                 本頁面由
                 <a href="https://cloud.google.com/translate/?hl=zh-tw"
                   >Cloud Translation API</a
                 >
                 翻譯而成。
-              </span>
+              </div>
             </div>
             <button class="tran-button">Switch to English</button>
           </div>
