@@ -223,7 +223,7 @@ footer {
 .search-in {
   background-color: #dadce0;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .hd-item-5 {
     display: none;
   }
@@ -249,10 +249,25 @@ footer {
   }
 }
 
+.header-menu {
+  display: none;
+}
+.header-menu-item {
+  height: 47px;
+}
+.header-menu-item a {
+  text-decoration: none;
+  color: #dadce0;
+}
 @media screen and (max-width: 1000px) {
+  .hd-item-1,
+  .hd-item-2,
   .hd-item-3,
   .hd-item-4 {
     display: none;
+  }
+  .header-menu {
+    display: inline-block;
   }
 }
 
@@ -262,7 +277,7 @@ footer {
   }
   .row-html,
   .fullscreen-item {
-    max-width: 95vw;
+    max-width: 94vw;
   }
 
   .fullscreen-item h2 {

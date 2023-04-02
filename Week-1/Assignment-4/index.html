@@ -15,6 +15,89 @@
   <body>
     <header>
       <div class="header-wrapper">
+        <button
+          class="btn btn-light header-menu"
+          style="margin-left: -16px"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-filter-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header d-flex justify-content-start">
+            <button
+              type="button"
+              class="btn-close text-reset me-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <div class="home">
+              <a href="#">
+                <img
+                  src="https://www.gstatic.com/devrel-devsite/prod/ve286fa3f99aa90bc7ef7460968844e5bb93251ce750a58802f281151c87037d6/developers/images/lockup.svg"
+                  alt="Google Developer logo"
+                  class="logo"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="header-menu-ul d-flex flex-column border-top ps-0"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <li
+                class="header-menu-item border-bottom d-flex align-items-center"
+              >
+                <a href="#">Products</a>
+              </li>
+              <li
+                class="header-menu-item border-bottom d-flex align-items-center"
+              >
+                <a href="#">Events</a>
+              </li>
+              <li
+                class="header-menu-item border-bottom d-flex align-items-center"
+              >
+                <a href="#">Learn</a>
+              </li>
+              <li
+                class="header-menu-item border-bottom d-flex align-items-center"
+              >
+                <a href="#">Community</a>
+              </li>
+              <li
+                class="header-menu-item border-bottom d-flex align-items-center"
+              >
+                <a href="#">Developer Profile</a>
+              </li>
+              <li
+                class="header-menu-item border-bottom d-flex align-items-center"
+              >
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="home">
           <a href="#">
             <img
@@ -61,6 +144,18 @@
               </form>
             </div>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search ms-auto header-menu"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
         </nav>
         <div class="change-language-div">
           <button
