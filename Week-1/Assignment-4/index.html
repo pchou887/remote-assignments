@@ -31,47 +31,40 @@
           <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item hd-item-1">
                   <a class="nav-link" href="#">Products</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hd-item-2">
                   <a class="nav-link" href="#">Events</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hd-item-3">
                   <a class="nav-link" href="#">Learn</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hd-item-4">
                   <a class="nav-link" href="#">Community</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item hd-item-5">
                   <a class="nav-link" href="#">Developer Profile</a>
                 </li>
-                <li class="nav-item m">
+                <li class="nav-item hd-item-6">
                   <a class="nav-link" href="#">Blog</a>
                 </li>
-                <form class="d-flex">
-                  <input
-                    class="form-control me-auto"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                    style="max-height: 36px"
-                  />
-                  <button
-                    class="btn btn-outline-success"
-                    type="submit"
-                    style="max-height: 36px"
-                  >
-                    Search
-                  </button>
-                </form>
               </ul>
+              <form class="d-flex search">
+                <input
+                  class="form-control me-auto search-in"
+                  type="search"
+                  placeholder="搜尋結果"
+                  aria-label="Search"
+                  style="max-height: 36px; min-width: 200px"
+                />
+              </form>
             </div>
           </div>
         </nav>
         <div class="change-language-div">
           <button
-            class="change-language btn btn-light"
+            class="change-language btn btn-light me-4"
             style="height: 32px; min-width: 152px"
           >
             <svg
@@ -312,7 +305,7 @@
           </section>
           <section class="google-logos">
             <div class="logos-header d-flex justify-content-center pt-4 pb-4">
-              <h2 class="display-3">
+              <h2 class="display-3 logos-header-title">
                 透過 Google 打造<strong>任何服務</strong>
               </h2>
             </div>
@@ -443,49 +436,33 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer">
-        <nav
-          class="navbar navbar-expand-lg navbar-light bg-light py-4"
-          style="height: 32px; background-color: rgb(255, 255, 255)"
-        >
-          <div
-            class="container-fluid"
-            style="background-color: rgb(255, 255, 255)"
-          >
-            <div class="home footer-item">
-              <a href="#">
-                <img
-                  src="https://www.gstatic.com/devrel-devsite/prod/ve286fa3f99aa90bc7ef7460968844e5bb93251ce750a58802f281151c87037d6/developers/images/lockup.svg"
-                  alt="Google Developer logo"
-                  class="logo"
-                />
-              </a>
-            </div>
-            <div
-              class="collapse navbar-collapse"
-              id="navbarSupportedContent"
-              style="background-color: rgb(255, 255, 255)"
-            >
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-3 px-5">
-                <li class="nav-item footer-item">
-                  <a class="nav-link" href="#">Android</a>
-                </li>
-                <li class="nav-item footer-item">
-                  <a class="nav-link" href="#">Chrome</a>
-                </li>
-                <li class="nav-item footer-item">
-                  <a class="nav-link" href="#">Firebase</a>
-                </li>
-                <li class="nav-item footer-item">
-                  <a class="nav-link" href="#">Google Cloud Platform</a>
-                </li>
-                <li class="nav-item footer-item">
-                  <a class="nav-link" href="#">所有產品</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <footer class="border-top">
+      <div class="footer-porducts py-4">
+        <nav class="d-flex footer-porducts-nav">
+          <a class="home footer-porducts-item footer-logo" href="#">
+            <img
+              src="https://www.gstatic.com/devrel-devsite/prod/ve286fa3f99aa90bc7ef7460968844e5bb93251ce750a58802f281151c87037d6/developers/images/lockup.svg"
+              alt="Google Developer logo"
+              class="logo"
+            />
+          </a>
+          <ul class="d-flex footer-porducts-ul">
+            <li class="footer-porducts-item">
+              <a href="#">Android</a>
+            </li>
+            <li class="footer-porducts-item">
+              <a href="#">Chrome</a>
+            </li>
+            <li class="footer-porducts-item">
+              <a href="#">Firebase</a>
+            </li>
+            <li class="footer-porducts-item">
+              <a href="#">Google Cloud Platform</a>
+            </li>
+            <li class="footer-porducts-item">
+              <a href="#">所有產品</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </footer>
