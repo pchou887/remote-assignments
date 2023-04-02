@@ -257,7 +257,10 @@ footer {
 }
 .header-menu-item a {
   text-decoration: none;
-  color: #dadce0;
+  color: #3c4043;
+}
+.header-menu-item a:visited {
+  color: #3c4043;
 }
 @media screen and (max-width: 1000px) {
   .hd-item-1,
