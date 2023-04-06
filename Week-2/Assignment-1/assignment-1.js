@@ -1,12 +1,20 @@
 function max(numbers) {
-  let temp_max = numbers[0];
-  for (let i = 0; i < numbers.length; i++)
-    if (numbers[i] > temp_max) temp_max = numbers[i];
-  return temp_max;
+  // 預設最大值為第一位
+  let MaxNumber = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > MaxNumber) {
+      MaxNumber = numbers[i];
+    }
+  }
+  return MaxNumber;
 }
 
 function findPosition(numbers, target) {
-  for (let i = 0; i < numbers.length; i++) if (numbers[i] === target) return i;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === target) {
+      return i;
+    }
+  }
   return -1;
 }
 

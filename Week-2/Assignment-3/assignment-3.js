@@ -1,9 +1,8 @@
 function count(input) {
   let data = {};
-  for (let i = 0; i < input.length; i++)
-    data[input[i]] =
-      input[i] in data ? data[input[i]] + 1 : (data[input[i]] = 1);
-
+  for (let i = 0; i < input.length; i++) {
+    data[input[i]] = input[i] in data ? data[input[i]] + 1 : 1;
+  }
   return data;
 }
 
@@ -12,12 +11,12 @@ console.log(count(input1));
 
 function groupByKey(input) {
   let data = {};
-  for (let i = 0; i < input.length; i++)
+  for (let i = 0; i < input.length; i++) {
     data[input[i].key] =
       input[i].key in data
         ? data[input[i].key] + input[i].value
         : input[i].value;
-
+  }
   return data;
 }
 
