@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>sum</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label>
+        Please Enter N:
+        <input type="text" name="number" />
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          document.getElementsByTagName("body")[0].innerHTML = xhr.responseText;
+        }
+      };
+      xhr.open("GET", "http://localhost:3000/data");
+      xhr.send();
+    </script>
+  </body>
+</html>
