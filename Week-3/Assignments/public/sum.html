@@ -5,7 +5,8 @@
     <title>sum</title>
   </head>
   <body>
-    <form action="" method="get">
+    <div></div>
+    <form action="/data" method="get">
       <label>
         Please Enter N:
         <input type="text" name="number" />
@@ -16,7 +17,7 @@
       const xhr = new XMLHttpRequest();
       xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-          document.getElementsByTagName("body")[0].innerHTML = xhr.responseText;
+          document.getElementsByTagName("div")[0].innerHTML = xhr.responseText;
         }
       };
       xhr.open("GET", "http://localhost:3000/data");

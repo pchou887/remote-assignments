@@ -4,9 +4,7 @@ const router = express.Router();
 router.get("/", (req, res) => {
   const cookieName = req.cookies.name;
   const { name } = req.query;
-  if (!cookieName && !name) {
-    res.render("trackName");
-  } else if (cookieName) {
+  if ((!cookieName && !name) || cookieName) {
     res.redirect("../myName");
   } else {
     res.cookie("name", name);
