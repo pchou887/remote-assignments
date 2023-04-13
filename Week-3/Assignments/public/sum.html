@@ -5,23 +5,27 @@
     <title>sum</title>
   </head>
   <body>
-    <div></div>
-    <form action="/data" method="get">
+    <form>
       <label>
         Please Enter N:
-        <input type="text" name="number" />
+        <input type="text" name="number" id="number" />
       </label>
-      <button type="submit">Submit</button>
+      <button type="button" onclick="getSum()">Submit</button>
     </form>
+    <div></div>
     <script>
-      const xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          document.getElementsByTagName("div")[0].innerHTML = xhr.responseText;
-        }
+      const getSum = () => {
+        const xhr = new XMLHttpRequest();
+        const number = document.getElementById("number").value;
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementsByTagName("div")[0].innerHTML =
+              xhr.responseText;
+          }
+        };
+        xhr.open("GET", "http://localhost:3000/data?number=" + number, true);
+        xhr.send();
       };
-      xhr.open("GET", "http://localhost:3000/data");
-      xhr.send();
     </script>
   </body>
 </html>
