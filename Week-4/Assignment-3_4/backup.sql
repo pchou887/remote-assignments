@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.27, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.32, for Linux (x86_64)
 --
 -- Host: localhost    Database: assignment
 -- ------------------------------------------------------
--- Server version	8.0.27-0ubuntu0.20.04.1
+-- Server version	8.0.32-0ubuntu0.20.04.2
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -26,10 +26,10 @@ CREATE TABLE `article` (
   `id` int NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `content` varchar(255) NOT NULL,
-  `author` varchar(255) NOT NULL,
+  `user_id` int NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `author` (`author`),
-  CONSTRAINT `article_ibfk_1` FOREIGN KEY (`author`) REFERENCES `user` (`email`)
+  KEY `user_id` (`user_id`),
+  CONSTRAINT `article_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -39,7 +39,7 @@ CREATE TABLE `article` (
 
 LOCK TABLES `article` WRITE;
 /*!40000 ALTER TABLE `article` DISABLE KEYS */;
-INSERT INTO `article` VALUES (1,'1','1ST CONTENT','jerry@gmail.com'),(2,'2','2ND CONTENT','jerry@gmail.com'),(3,'3','3RD CONTENT','amy@gmail.com'),(4,'4','4TH CONTENT','mike@gmail.com'),(5,'5','5TH CONTENT','amy@gmail.com'),(6,'6','6TH CONTENT','mike@gmail.com'),(7,'7','7TH CONTENT','mike@gmail.com'),(8,'8','8TH CONTENT','amy@gmail.com'),(9,'9','9TH CONTENT','amy@gmail.com'),(10,'10','10TH CONTENT','mike@gmail.com'),(11,'11','11TH CONTENT','mike@gmail.com'),(12,'12','12TH CONTENT','amy@gmail.com'),(13,'13','13TH CONTENT','mike@gmail.com'),(14,'14','14TH CONTENT','jerry@gmail.com'),(15,'15','15TH CONTENT','jerry@gmail.com'),(16,'16','16TH CONTENT','amy@gmail.com'),(17,'17','17TH CONTENT','jerry@gmail.com'),(18,'18','18TH CONTENT','amy@gmail.com'),(19,'19','19TH CONTENT','mike@gmail.com'),(20,'20','20TH CONTENT','jerry@gmail.com'),(21,'21','21ST CONTENT','mike@gmail.com'),(22,'22','22ND CONTENT','jerry@gmail.com'),(23,'23','23RD CONTENT','mike@gmail.com'),(24,'24','24TH CONTENT','amy@gmail.com'),(25,'25','25TH CONTENT','jerry@gmail.com'),(26,'26','26TH CONTENT','mike@gmail.com'),(27,'27','27TH CONTENT','amy@gmail.com'),(28,'28','28TH CONTENT','jerry@gmail.com'),(29,'29','29TH CONTENT','amy@gmail.com'),(30,'30','30TH CONTENT','jerry@gmail.com');
+INSERT INTO `article` VALUES (1,'1','1ST CONTENT',1),(2,'2','2ND CONTENT',1),(3,'3','3RD CONTENT',2),(4,'4','4TH CONTENT',3),(5,'5','5TH CONTENT',2),(6,'6','6TH CONTENT',3),(7,'7','7TH CONTENT',3),(8,'8','8TH CONTENT',2),(9,'9','9TH CONTENT',2),(10,'10','10TH CONTENT',3),(11,'11','11TH CONTENT',3),(12,'12','12TH CONTENT',2),(13,'13','13TH CONTENT',3),(14,'14','14TH CONTENT',1),(15,'15','15TH CONTENT',1),(16,'16','16TH CONTENT',2),(17,'17','17TH CONTENT',1),(18,'18','18TH CONTENT',2),(19,'19','19TH CONTENT',3),(20,'20','20TH CONTENT',1),(21,'21','21ST CONTENT',3),(22,'22','22ND CONTENT',1),(23,'23','23RD CONTENT',3),(24,'24','24TH CONTENT',2),(25,'25','25TH CONTENT',1),(26,'26','26TH CONTENT',3),(27,'27','27TH CONTENT',2),(28,'28','28TH CONTENT',1),(29,'29','29TH CONTENT',2),(30,'30','30TH CONTENT',1);
 /*!40000 ALTER TABLE `article` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -78,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-20  1:41:53
+-- Dump completed on 2023-04-22  0:15:13
